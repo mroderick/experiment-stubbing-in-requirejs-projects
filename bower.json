@@ -1,0 +1,23 @@
+{
+  "name": "mocking-require-js",
+  "version": "0.0.0",
+  "authors": [
+    "Morgan Roderick <morgan@roderick.dk>"
+  ],
+  "moduleType": [
+    "amd"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "src/vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "requirejs": "~2.1.11"
+  }
+}

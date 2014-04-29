@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Demo</title>
+    </head>
+    <body>
+        <h1>Demo</h1>
+
+        <p>This is just a demo to show how the dependencies are loaded</p>
+
+        <p>The developer console will show how many source files are loaded</p>
+
+        <script src="vendor/requirejs/require.js"></script>
+        <script>
+            require(['src/a'], function(a){
+                console.log('window.sourceFilesLoaded: ', window.sourceFilesLoaded);
+            });
+        </script>
+    </body>
+</html>
