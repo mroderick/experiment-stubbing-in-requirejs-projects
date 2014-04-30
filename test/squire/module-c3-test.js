@@ -5,15 +5,15 @@ define(['vendor/squire/src/Squire'], function(Squire){
     var assert = buster.assert,
         refute = buster.refute;
 
-    describe('a', function(){
+    describe('c3', function(){
         var injector = new Squire(),
-            a;
+            c3;
 
         beforeAll(function(done){
             injector.require(
-                ['src/a'],
+                ['src/c3'],
                 function succes(moduleLoaded){
-                    a = moduleLoaded;
+                    c3 = moduleLoaded;
                     done();
                 },
                 function error(err){
@@ -27,15 +27,15 @@ define(['vendor/squire/src/Squire'], function(Squire){
         });
 
         it('should be a constructor', function(){
-            assert.isFunction(a);
+            assert.isFunction(c3);
         });
 
         it('should be defined', function(){
-            assert.defined(a);
+            assert.defined(c3);
         });
 
         it('must not be a Boolean', function(){
-            refute.isBoolean(a);
+            refute.isBoolean(c3);
         });
     });
 });
