@@ -3,7 +3,7 @@
 
     var config = module.exports;
 
-    config['No stubs'] = {
+    config['basic setup'] = {
         rootPath: '../',
         environment: 'browser', // or 'node'
 
@@ -18,13 +18,17 @@
         sources: [
             'src/*.js'
         ],
-        tests: [
-            'test/no-mocks/*-test.js'
-        ],
         testHelpers: ['test/helper.js'],
 
         extensions : [
             require('buster-amd')
+        ]
+    }
+
+    config['No stubs'] = {
+        extends : 'basic setup',
+        tests: [
+            'test/no-mocks/*-test.js'
         ]
     };
 
