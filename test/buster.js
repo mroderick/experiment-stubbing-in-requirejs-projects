@@ -3,7 +3,7 @@
 
     var config = module.exports;
 
-    config['basic setup'] = {
+    config['No stubs'] = {
         rootPath: '../',
         environment: 'browser', // or 'node'
 
@@ -18,19 +18,15 @@
         sources: [
             'src/*.js'
         ],
+        tests: [
+            'test/no-mocks/*-test.js'
+        ],
         testHelpers: ['test/helper.js'],
 
         extensions : [
             require('buster-amd')
         ]
     }
-
-    config['No stubs'] = {
-        extends : 'basic setup',
-        tests: [
-            'test/no-mocks/*-test.js'
-        ]
-    };
 
     config['Squire stubs'] = {
         rootPath: '../',
