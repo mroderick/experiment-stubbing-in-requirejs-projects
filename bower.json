@@ -19,6 +19,7 @@
   ],
   "dependencies": {
     "requirejs": "~2.1.11",
-    "bogus": "~0.3.0"
+    "bogus": "~0.3.0",
+    "squire": "~0.2.0"
   }
 }
