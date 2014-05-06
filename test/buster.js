@@ -3,7 +3,7 @@
 
     var config = module.exports;
 
-    config['No stubs'] = {
+    config['no-stubs'] = {
         rootPath: '../',
         environment: 'browser', // or 'node'
 
