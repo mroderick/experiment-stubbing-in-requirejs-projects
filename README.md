@@ -75,4 +75,6 @@ If we were to write tests for `shared-dependency.js`, it would be loaded twice.
 
 ![With bogus stubbing, network tab showing single load of shared-dependency.js](images/bogus.png)
 
+## License
 
+MIT: http://mrgnrdrck.mit-license.org
